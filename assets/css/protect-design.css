@@ -1,0 +1,112 @@
+/* ========== DESIGN PROTECTION - DO NOT MODIFY ========== */
+/* This file ensures the original design from picture is preserved */
+
+/* Original Color Scheme Protection */
+:root {
+    /* Primary Colors - Exactly as in design picture */
+    --primary-original: #4361ee;
+    --secondary-original: #3f37c9;
+    --success-original: #4cc9f0;
+    --danger-original: #f72585;
+    --warning-original: #f8961e;
+    --info-original: #4895ef;
+    --light-original: #f8f9fa;
+    --dark-original: #212529;
+    
+    /* Gradient Protection - Original gradients from design */
+    --gradient-admin: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --gradient-teacher: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    --gradient-student: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    --gradient-certificate: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}
+
+/* Layout Protection - Fixed dimensions from original design */
+.sidebar {
+    width: 280px !important; /* Protected width */
+    background: var(--gradient-admin) !important;
+}
+
+.main-content {
+    margin-left: 280px !important;
+}
+
+/* Card Design Protection - Original card styles */
+.stat-card {
+    background: white !important;
+    border-radius: 15px !important;
+    padding: 25px !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1) !important;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2) !important;
+}
+
+/* Table Design Protection */
+.table-container {
+    background: white !important;
+    border-radius: 15px !important;
+    padding: 25px !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1) !important;
+}
+
+.table th {
+    background: var(--light-original) !important;
+    padding: 15px !important;
+}
+
+.table td {
+    padding: 15px !important;
+    border-bottom: 1px solid #e0e0e0 !important;
+}
+
+/* Button Design Protection */
+.btn-login {
+    background: var(--gradient-admin) !important;
+    padding: 14px !important;
+    border-radius: 10px !important;
+    font-weight: 600 !important;
+}
+
+/* Form Design Protection */
+.form-control {
+    padding: 12px 15px 12px 45px !important;
+    border: 2px solid #e0e0e0 !important;
+    border-radius: 10px !important;
+}
+
+/* Status Badge Protection */
+.status-badge {
+    padding: 5px 12px !important;
+    border-radius: 20px !important;
+    font-size: 0.85em !important;
+}
+
+/* Course Card Protection */
+.course-card {
+    border-radius: 15px !important;
+    overflow: hidden !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1) !important;
+}
+
+.course-image {
+    height: 200px !important;
+}
+
+/* Certificate Protection */
+.certificate-card {
+    background: var(--gradient-certificate) !important;
+    padding: 40px !important;
+    border-radius: 20px !important;
+}
+
+/* Responsive Protection */
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 80px !important;
+    }
+    .main-content {
+        margin-left: 80px !important;
+    }
+}

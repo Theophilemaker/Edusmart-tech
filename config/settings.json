@@ -1,0 +1,24 @@
+{
+    "school_name": "EduSmart Pro",
+    "email": "theophilen298@gmail.com",
+    "phone": "250793473101",
+    "address": "H123 Education Street, Learning huye  City",
+    "timezone": "UTC",
+    "date_format": "M d, Y",
+    "currency": "USD",
+    "smtp": {
+        "host": "smtp.gmail.com",
+        "port": "587",
+        "user": "theophilen298@gmail.com",
+        "pass": "15@20004n",
+        "encryption": ""
+    },
+    "sms": {
+        "api_key": "",
+        "sender_id": "EduSmart"
+    },
+    "email_notifications": false,
+    "sms_notifications": false,
+    "maintenance_mode": true,
+    "registration_open": true
+}
