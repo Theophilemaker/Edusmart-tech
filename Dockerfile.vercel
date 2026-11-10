@@ -1,1 +1,19 @@
+FROM dunglas/frankenphp:1-php8.4-alpine
 
+WORKDIR /app
+
+RUN cp "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
+
+RUN install-php-extensions mysqli pdo_mysql mbstring curl gd zip exif
+
+COPY Caddyfile /etc/caddy/Caddyfile
+
+# Keep the CA certificate outside the public website directory.
+COPY ca.pem /app/certs/ca.pem
+
+# The existing repository's index.php is at its root.
+COPY . /app/public/
+
+ENV PORT=80
+
+CMD ["frankenphp", "run", "--config", "/etc/caddy/Caddyfile"]
