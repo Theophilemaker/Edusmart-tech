@@ -1,9 +1,9 @@
 <?php
 // Database Configuration for PHP 8.5+
-$host = 'sql205.infinityfree.com';
-$username = 'if0_41252524';
-$password = '15edusmart123e';
-$database = 'if0_41252524_edusmart_pro';
+$host = 'gateway01.ap-northeast-1.prod.aws.tidbcloud.com';
+$username = 'TNgsFn1wYuV4wMq.root';
+$password = '<PASSWORD>';
+$database = 'edusmart_pro';
 
 // Create connection with error reporting
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
