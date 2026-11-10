@@ -1,1 +1,8 @@
-
+.git
+.vercel
+.env
+.env.*
+*.log
+backups/
+logs/
+ca.pem
