@@ -17,7 +17,7 @@ $database = getenv('TIDB_DATABASE') ?: 'edusmart_pro';
 
 // SSL certificate path
 $caPath = getenv('TIDB_CA_PATH')
-    ?: __DIR__ . '/../certs/ca.pem';
+    ?: __DIR__ . '/../ca.pem';
 
 // Check required configuration
 if (
